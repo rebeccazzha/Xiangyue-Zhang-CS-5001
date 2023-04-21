@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base</title>
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.4.1/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/home/">Cocktails DIY</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="/welcome/">Home</a></li>
+          <li><a href="/popular/">Populars</a></li>
+        <li><a href="/base/">Choose Base</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="content">
+    <h1 class="head">Choose Your Favorite Base!</h1>
+    <div class="row">
+        <div class="col-xs-6 col-md-3">
+            <p>Vodka</p>
+            <a href="/vodka/" class="thumbnail">
+            <img src="{% static 'img/vodka.jpg' %}" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <p>Whiskey</p>
+            <a href="/whiskey/" class="thumbnail">
+            <img src="{% static 'img/whiskey.jpeg' %}" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <p>Tequila</p>
+            <a href="/tequila/" class="thumbnail">
+            <img src="{% static 'img/tequila.jpeg' %}" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <p>Gin</p>
+            <a href="/gin/" class="thumbnail">
+            <img src="{% static 'img/gin.jpeg' %}" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <p>Rum</p>
+            <a href="/rum/" class="thumbnail">
+            <img src="{% static 'img/rum.jpeg' %}" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <p>Brandy</p>
+            <a href="/brandly/" class="thumbnail">
+            <img src="{% static 'img/brandy.jpeg' %}" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <p>Mixed</p>
+            <a href="/mixed/" class="thumbnail">
+            <img src="{% static 'img/mixed.jpeg' %}" alt="...">
+            </a>
+        </div>
+</div>
+</div>
+</body>
+</html>
